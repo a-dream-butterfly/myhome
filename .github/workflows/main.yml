@@ -28,7 +28,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Build
-        run: npm install && npm run build
+        run: pnpm install && pnpm run build
 
       # 部署到Github Pages
       - name: Deploy
