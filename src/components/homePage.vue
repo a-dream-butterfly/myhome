@@ -2,9 +2,9 @@
   <div class="container-box">
     <div class="main-box">
       <div class="top-box">
-        <div class="top-left-box">
-          <span class="title-item">Home</span>
-        </div>
+        <!--        <div class="top-left-box">-->
+        <!--          <span class="title-item">Home</span>-->
+        <!--        </div>-->
         <div class="top-right-box">
           <span
             class="title-item"
@@ -161,7 +161,7 @@ export default {
      display: flex;
      height: 50px;
      padding: 0 20px;
-     justify-content: space-between;
+     justify-content: flex-end;
      align-items: center;
      margin-top: 10px;
      .top-left-box {
@@ -227,7 +227,7 @@ export default {
         display: flex;
         height: 50px;
         padding: 10px 20px;
-        justify-content: space-between;
+        justify-content: flex-end;
         align-items: center;
         margin-top: 10px;
         .top-left-box {
