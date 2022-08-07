@@ -35,7 +35,7 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
           ACCESS_TOKEN: ${{ secrets.STATIC_BLOG_WEBSITE }}
-          REPOSITORY_NAME: somenzz/somenzz.github.io
+          REPOSITORY_NAME: a-dream-butterfly.github.io
           BRANCH: pages
           FOLDER: dist
           
