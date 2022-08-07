@@ -24,16 +24,15 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - name: Run checkOut
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@develop
         
       # 部署到Github Pages
       - name: Deploy and Build
-        uses: JamesIves/github-pages-deploy-action@releases/v3
+        uses: JamesIves/github-pages-deploy-action@develop
         
         env:
           ACCESS_TOKEN: ${{ secrets.STATIC_BLOG_WEBSITE }}
           BASE_BRANCH: develop
           BRANCH: pages
-          REPOSITORY_NAME: a-dream-butterfly.github.io
           FOLDER: dist
           BUILD_SCRIPT: npm install && npm run build
