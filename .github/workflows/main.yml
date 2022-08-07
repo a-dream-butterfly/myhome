@@ -23,11 +23,11 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - name: Run checkOut
-        uses: actions/checkout@develop
+        uses: actions/checkout@v3
         
       # 部署到Github Pages
       - name: Deploy and Build
-        uses: JamesIves/github-pages-deploy-action@develop
+        uses: JamesIves/github-pages-deploy-action@v3
         
         env:
           ACCESS_TOKEN: ${{ secrets.STATIC_BLOG_WEBSITE }}
