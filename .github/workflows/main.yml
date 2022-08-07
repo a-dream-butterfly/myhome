@@ -23,7 +23,7 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - name: Run checkOut
-      - uses: actions/checkout@develop
+        uses: actions/checkout@develop
         
       # 部署到Github Pages
       - name: Deploy and Build
