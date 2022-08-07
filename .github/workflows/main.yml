@@ -36,6 +36,6 @@ jobs:
          with:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           REPOSITORY_NAME: somenzz/somenzz.github.io
-          BRANCH: develop
+          BRANCH: pages
           FOLDER: dist
           
