@@ -33,7 +33,7 @@ jobs:
       # 部署到Github Pages
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@releases/v3
-         with:
+        with:
           ACCESS_TOKEN: ${{ secrets.STATIC_BLOG_WEBSITE }}
           REPOSITORY_NAME: somenzz/somenzz.github.io
           BRANCH: pages
