@@ -25,13 +25,16 @@ jobs:
       - name: Run checkOut
         uses: actions/checkout@v3
         
-      # 部署到Github Pages
-      - name: Deploy and Build
-        uses: JamesIves/github-pages-deploy-action@v4.2.5
+      - name: Install and Build
+        run: |
+          npm install
+          npm run build
         
-        env:
+      # 部署到Github Pages
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@v4.2.5
+        with:
           ACCESS_TOKEN: ${{ secrets.STATIC_BLOG_WEBSITE }}
           BASE_BRANCH: develop
           BRANCH: pages
           FOLDER: dist
-          BUILD_SCRIPT: npm install && npm run build
