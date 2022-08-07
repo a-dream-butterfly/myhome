@@ -37,4 +37,3 @@ jobs:
           ACCESS_TOKEN: ${{ secrets.STATIC_BLOG_WEBSITE }}
           BASE_BRANCH: develop
           BRANCH: pages
-          FOLDER: dist
