@@ -1,7 +1,22 @@
-import { defineConfig } from 'vite'
-import vue from '@vitejs/plugin-vue'
+import { defineConfig } from "vite";
+import vue from "@vitejs/plugin-vue";
+import Icons from "unplugin-icons/vite";
+
 // https://vitejs.dev/config/
-export default defineConfig({
-    plugins: [vue()],
-    base:'/myhome/'   // 对应GitHub项目名称
-})
+export default defineConfig(
+    {
+        base: "./",
+        plugins: [
+            vue(),
+            Icons({
+                compiler: "vue3",
+                autoInstall: true,
+            }),
+        ],
+        build: {
+            rollupOptions: {
+                input: "/index.html",
+            },
+        },
+    }
+);
