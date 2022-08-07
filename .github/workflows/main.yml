@@ -27,8 +27,8 @@ jobs:
 
       - name: Install and Build
         run: |
-          npm install
-          npm run build
+          yarn install
+          yarn run build
 
       # 部署到Github Pages
       - name: Deploy
