@@ -56,7 +56,7 @@
       <div class="content-box">
         <div class="introduction-box">
           <img
-            src="../assets/avatar.png"
+            src="https://www.os0day.cn/favicon.ico"
             alt="avatar"
             class="avatar-class"
           >
