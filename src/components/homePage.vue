@@ -56,7 +56,7 @@
       <div class="content-box">
         <div class="introduction-box">
           <img
-            src="https://fastly.jsdelivr.net/gh/OS0day/themeNextCDN@v0.0.7/favicon.ico"
+            src="https://fastly.jsdelivr.net/gh/OS0day/themeNextCDN@v0.0.8/favicon.ico"
             alt="avatar"
             class="avatar-class"
           >
