@@ -34,7 +34,7 @@ jobs:
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4.2.5
         with:
-          ACCESS_TOKEN: ${{ secrets.STATIC_BLOG_WEBSITE }}
+          ACCESS_TOKEN: ${{ secrets.myTest }}
           BASE_BRANCH: develop
           BRANCH: pages
           FOLDER: ./dist
