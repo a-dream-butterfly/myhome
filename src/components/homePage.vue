@@ -80,6 +80,14 @@
           </div>
         </div>
       </div>
+      <div
+        class="bottom-box"
+        @click="dumpTo('record')"
+      >
+        <span>
+          闽ICP备19025359号
+        </span>
+      </div>
     </div>
   </div>
 </template>
@@ -133,6 +141,9 @@ export default {
         case 'wifi':
           window.open('https://blog.os0day.cn/atom.xml', '_blank')
           break;
+        case 'record':
+            window.open('https://beian.miit.gov.cn/', '_blank')
+            break;
       }
     }
   }
@@ -173,6 +184,16 @@ export default {
        }
      }
    }
+  .bottom-box {
+      display: flex;
+      position: relative;
+      cursor: pointer;
+      flex-direction: row;
+      justify-content: space-around;
+      > span {
+        color: #bcacac;
+      }
+    }
    .content-box {
      height: 750px;
      padding: 20px 20px;
@@ -238,6 +259,16 @@ export default {
             height: 20px;
             width: 20px;
           }
+        }
+      }
+      .bottom-box {
+        display: flex;
+        position: relative;
+        cursor: pointer;
+        flex-direction: row;
+        justify-content: space-around;
+        > span {
+          color: #bcacac;
         }
       }
       .content-box {
